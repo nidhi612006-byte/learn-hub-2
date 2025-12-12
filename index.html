@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub - Online Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <h2>🚀 LearnHub</h2>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#home" class="nav-link" data-page="home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#about" class="nav-link" data-page="about">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#courses" class="nav-link" data-page="courses">Courses</a>
+            </li>
+            <li class="nav-item">
+                <a href="#login" class="nav-link" data-page="login">Login</a>
+            </li>
+            <li class="nav-item">
+                <a href="#register" class="nav-link" data-page="register">Register</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Container -->
+<div class="page-container">
+    
+    <!-- Home Page -->
+    <section id="home" class="page active">
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Unlock Your Future with LearnHub</h1>
+                <p class="hero-subtitle">Master new skills with our expert-led courses. Start learning today!</p>
+                <div class="hero-buttons">
+                    <a href="#courses" class="btn btn-primary" data-page="courses">Explore Courses</a>
+                    <a href="#register" class="btn btn-secondary" data-page="register">Get Started Free</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card">📚</div>
+                <div class="floating-card delay-1">💻</div>
+                <div class="floating-card delay-2">🎓</div>
+            </div>
+        </div>
+        
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Learn Anywhere</h3>
+                <p>Access courses on any device, anytime, anywhere.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⭐</div>
+                <h3>Expert Teachers</h3>
+                <p>Learn from industry professionals with real-world experience.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3>Affordable Plans</h3>
+                <p>High-quality education at unbeatable prices.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Page -->
+    <section id="about" class="page">
+        <div class="about-container">
+            <h2>About LearnHub</h2>
+            <p>LearnHub is your one-stop destination for online education. Founded by passionate educators, we bring world-class learning to your fingertips. Join thousands of students who have transformed their careers with our platform.</p>
+            
+            <div class="stats">
+                <div class="stat">
+                    <h3>10K+</h3>
+                    <p>Students</p>
+                </div>
+                <div class="stat">
+                    <h3>500+</h3>
+                    <p>Courses</p>
+                </div>
+                <div class="stat">
+                    <h3>95%</h3>
+                    <p>Success Rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Page -->
+    <section id="courses" class="page">
+        <h2 class="page-title">Popular Courses</h2>
+        <div class="courses-grid">
+            <div class="course-card">
+                <div class="course-image">💻</div>
+                <div class="course-content">
+                    <h3>Web Development Bootcamp</h3>
+                    <p>Master HTML, CSS, JavaScript & React from scratch</p>
+                    <div class="course-meta">
+                        <span>⭐ 4.9 (1,234)</span>
+                        <span>₹999</span>
+                    </div>
+                    <button class="btn course-btn">Enroll Now</button>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-image">📱</div>
+                <div class="course-content">
+                    <h3>Mobile App Development</h3>
+                    <p>Build iOS & Android apps with Flutter</p>
+                    <div class="course-meta">
+                        <span>⭐ 4.8 (987)</span>
+                        <span>₹1,299</span>
+                    </div>
+                    <button class="btn course-btn">Enroll Now</button>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-image">🔬</div>
+                <div class="course-content">
+                    <h3>Data Science & AI</h3>
+                    <p>Python, Machine Learning & Deep Learning</p>
+                    <div class="course-meta">
+                        <span>⭐ 4.9 (2,456)</span>
+                        <span>₹1,499</span>
+                    </div>
+                    <button class="btn course-btn">Enroll Now</button>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-image">🎨</div>
+                <div class="course-content">
+                    <h3>UI/UX Design Mastery</h3>
+                    <p>Figma, Adobe XD & Design Principles</p>
+                    <div class="course-meta">
+                        <span>⭐ 4.7 (856)</span>
+                        <span>₹799</span>
+                    </div>
+                    <button class="btn course-btn">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Page -->
+    <section id="login" class="page">
+        <div class="auth-container">
+            <div class="auth-card">
+                <h2>Login to LearnHub</h2>
+                <form class="auth-form">
+                    <div class="input-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Login</button>
+                </form>
+                <p class="auth-link">Don't have an account? <a href="#register" data-page="register">Register here</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Page -->
+    <section id="register" class="page">
+        <div class="auth-container">
+            <div class="auth-card">
+                <h2>Create Account</h2>
+                <form class="auth-form">
+                    <div class="input-group">
+                        <input type="text" placeholder="Full Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Register</button>
+                </form>
+                <p class="auth-link">Already have an account? <a href="#login" data-page="login">Login here</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Page -->
+    <section id="payment" class="page">
+        <div class="payment-container">
+            <div class="payment-card">
+                <h2>Complete Your Purchase</h2>
+                <div class="course-details">
+                    <h3>Web Development Bootcamp</h3>
+                    <p>₹999 <span class="original-price">₹1,999</span></p>
+                </div>
+                <form class="payment-form">
+                    <div class="input-group">
+                        <input type="text" placeholder="Card Number" maxlength="19">
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <input type="text" placeholder="MM/YY" maxlength="5">
+                        </div>
+                        <div class="input-group">
+                            <input type="text" placeholder="CVV" maxlength="3">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Name on Card">
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Pay ₹999</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Page -->
+    <section id="quiz" class="page">
+        <div class="quiz-container">
+            <div class="quiz-header">
+                <h2>HTML & CSS Quiz</h2>
+                <div class="quiz-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span id="questionCount">Question 1 of 5</span>
+                </div>
+            </div>
+            <div class="quiz-content">
+                <div class="question" id="question1">
+                    <h3>1. What does HTML stand for?</h3>
+                    <div class="options">
+                        <label><input type="radio" name="q1" value="a"> Hyper Text Markup Language</label>
+                        <label><input type="radio" name="q1" value="b">Home Tool Markup Language</label>
+                        <label><input type="radio" name="q1" value="c">Hyperlinks and Text Markup Language</label>
+                    </div>
+                </div>
+                <div class="question hidden" id="question2">
+                    <h3>2. Which HTML tag is used for the largest heading?</h3>
+                    <div class="options">
+                        <label><input type="radio" name="q2" value="a"> &lt;h1&gt;</label>
+                        <label><input type="radio" name="q2" value="b"> &lt;h6&gt;</label>
+                        <label><input type="radio" name="q2" value="c"> &lt;head&gt;</label>
+                    </div>
+                </div>
+                <div class="question hidden" id="question3">
+                    <h3>3. What is the correct CSS syntax?</h3>
+                    <div class="options">
+                        <label><input type="radio" name="q3" value="a"> body {color: black}</label>
+                        <label><input type="radio" name="q3" value="b"> {body: black}</label>
+                        <label><input type="radio" name="q3" value="c"> body: color = black</label>
+                    </div>
+                </div>
+                <div class="question hidden" id="question4">
+                    <h3>4. Which CSS property controls text size?</h3>
+                    <div class="options">
+                        <label><input type="radio" name="q4" value="a"> font-size</label>
+                        <label><input type="radio" name="q4" value="b"> text-size</label>
+                        <label><input type="radio" name="q4" value="c"> text-transform</label>
+                    </div>
+                </div>
+                <div class="question hidden" id="question5">
+                    <h3>5. Which HTML attribute specifies an alternate text for an image?</h3>
+                    <div class="options">
+                        <label><input type="radio" name="q5" value="a"> alt</label>
+                        <label><input type="radio" name="q5" value="b"> title</label>
+                        <label><input type="radio" name="q5" value="c"> src</label>
+                    </div>
+                </div>
+            </div>
+            <div class="quiz-actions">
+                <button id="nextBtn" class="btn btn-primary">Next</button>
+                <button id="submitBtn" class="btn btn-success hidden">Submit Quiz</button>
+            </div>
+            <div id="quizResult" class="result hidden">
+                <h3 id="resultScore"></h3>
+                <p id="resultMessage"></p>
+                <button class="btn btn-primary" onclick="resetQuiz()">Try Again</button>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>🚀 LearnHub</h3>
+            <p>Your journey to success starts here. Learn, grow, and achieve your dreams with our world-class courses.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Contact</h4>
+            <p>📧 support@learnhub.com</p>
+            <p>📱 +91 98765 43210</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 LearnHub. All rights reserved. | Made with ❤ for learning</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
